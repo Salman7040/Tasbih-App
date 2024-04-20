@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/m4"
+    tools:context="MainActivity">
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="195dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#242323"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:tooltipText="Set Your Counter Limit For Alert"
+        android:id="@+id/limit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/black"
+        android:hint="Set"
+        android:text="33"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textCursorDrawable="@android:color/black"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/sound"
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sound"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="100dp"
+
+     />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="0dp"
+        android:text="Clear"
+        android:textAllCaps="false"
+        android:textColor="#2b2a2a"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/hide"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/hide"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="220dp"
+        android:orientation="horizontal"
+        >
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="@drawable/rope"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/marble" />
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/marble" />
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/imageview1"
+            android:src="@drawable/marble" />
+        <ImageView
+            android:id="@+id/imageview3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/imageview2"
+
+            android:src="@drawable/marble" />
+
+        <ImageView
+            android:id="@+id/imageview4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/imageview3"
+            android:src="@drawable/marble" />
+
+        <ImageView
+            android:id="@+id/imageview5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/imageview6"
+            android:src="@drawable/marble" />
+
+        <ImageView
+            android:id="@+id/imageview6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/marble" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
